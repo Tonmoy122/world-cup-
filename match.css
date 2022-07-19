@@ -118,10 +118,10 @@ margin-top: 83px;
     font-weight: 700;
     padding: 10px 30px;
 }
-#blog-color{
+#upmatch{
     background-color:tomato;
 }
-#blog-color:hover{
+#upmatch:hover{
     background-color: antiquewhite;
     color: #DD0000;
     transition: 0.9s;
