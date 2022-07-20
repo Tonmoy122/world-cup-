@@ -243,6 +243,7 @@ footer h1{
 
 /* middle part */
 /* grid  */
+
 @media only screen and (max-width:576px) {
     .middle-right {
         grid-template-columns: repeat(1, 1fr);
