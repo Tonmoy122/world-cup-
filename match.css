@@ -153,7 +153,8 @@ margin-top: 83px;
     grid-template-columns: repeat(3, 1fr);
 }
 .transfer:hover{
-    background-color: lightseagreen;
+    background-color: lightcoral;
+    transition: 0.5s;
 }
 .transfer{
     border: 2px solid goldenrod;
@@ -213,6 +214,18 @@ footer h1{
 .flag p{
     margin-top: 16%;
     font-size: 20px;
+}
+.copy-right{
+    display:flex;
+    justify-content: center;
+   
+}
+.copy-title{
+    color: white;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 25px;
+    text-align: center;
 }
 
 /* responsive */
