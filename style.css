@@ -5,16 +5,13 @@ body{
 .topper{
     margin: 10px 20px ;
 }
+
 .top-line{
-
-
     background: #161616;
     border-radius: 30px;
     display: flex;
     
 }
-
-
 .top-line .title {
 
     padding: 80px ;
@@ -27,19 +24,16 @@ font-size: 50px;
 font-weight: 700;
 
 }
-.title p {
-
-}
 
 .title button {
-width: 187px;
-height: 56px;
+    width: 187px;
+    height: 56px;
 
-background: #DD0000;
-border-radius: 5px;
-
-color: white;
+    background: #DD0000;
+    border-radius: 5px;
+    color: white;
 }
+
 button:hover{
     background-color: lightgreen;
     color: tomato;
@@ -48,10 +42,10 @@ button:hover{
     transition: 0.9s;
 }
 .title-img img{
-width: 581px;
-height: 613px;
-margin-left:150px;
-margin-top: 83px;
+    width: 581px;
+    height: 613px;
+    margin-left:150px;
+    margin-top: 83px;
 }
 
 .football img{
@@ -92,7 +86,9 @@ margin-top: 83px;
 }
 .middler{
     display:flex ;
+    margin: 50px 20px 50px 20px;
 }
+
 .middle-left{
     margin-right: 24px;
     margin-left: 130px;
@@ -144,9 +140,7 @@ margin-top: 83px;
     border: 5px solid;
     border-radius: 10px;
 }
-.middler{
-    margin: 50px 20px 50px 20px;
-}
+
 .middle-right{
     display: grid;
     grid-gap:24px;
@@ -154,6 +148,7 @@ margin-top: 83px;
 }
 .transfer{
     border: 2px solid goldenrod;
+    border-radius: 10px;
 
 }
 .transfer img{
@@ -207,3 +202,121 @@ footer h1{
     margin-top: 16%;
     font-size: 20px;
 }
+
+/* responsive */
+
+/* top part */
+/* ....................... */
+/* ...................... */
+
+@media only screen and (max-width:576px) {
+    .top-line {
+        background-color: tomato;
+        flex-direction: column;
+    }
+
+    .title-img img {
+        width: 300px;
+        height: 300px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .top-line {
+        background-color: seagreen;
+    }
+
+    .title-img img {
+        width: 350px;
+        height: 400px;
+        margin-left: 20px;
+        margin-top: 150px;
+    }
+}
+
+.view-all-btn {
+    display: none;
+}
+
+/* middle part */
+/* grid  */
+@media only screen and (max-width:576px) {
+    .middle-right {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .middle-right {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .view-all-btn {
+        display: block;
+    }
+}
+
+/* flex  */
+@media only screen and (max-width:576px) {
+    .middler {
+        flex-direction: column;
+    }
+
+    .middle-left {
+        margin: 0 0 20px 0px;
+        padding: 0;
+        width: 310px;
+        height: 312px;
+
+    }
+
+    .football {
+        width: 50%;
+        position: static;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .middler {
+        flex-direction: column;
+    }
+
+    .middle-left {
+        margin: 0 0 20px 0;
+        width: 83%;
+        height: 100px;
+        background: white;
+    }
+
+    .allswitch {
+        display: flex;
+    }
+
+    .allswitch a {
+        color: black;
+        margin: 0px 30px 270px 30px;
+    }
+
+
+}
+
+
+/* footer */
+@media only screen and (max-width:576px) {
+    .contact-list {
+        flex-direction: column;
+    }
+
+    .contact-list p {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    footer {
+        padding: 150px;
+    }
+}
+
