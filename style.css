@@ -104,6 +104,9 @@ button:hover{
     margin: 30px;
     height: 312px;
 }
+#changepage:hover{
+    background-color: cornflowerblue;
+}
 .allswitch a {
     display: block;
     color: white;
