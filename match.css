@@ -152,6 +152,9 @@ margin-top: 83px;
     grid-gap:24px;
     grid-template-columns: repeat(3, 1fr);
 }
+.transfer:hover{
+    background-color: lightseagreen;
+}
 .transfer{
     border: 2px solid goldenrod;
     border-radius: 10px;
@@ -164,7 +167,10 @@ margin-top: 83px;
     margin-left: 30px;
 }
 .transfer-tittle{
-    padding: 15px;
+    padding: 5px;
+    text-align: center;
+    font-family: 600;
+    
 }
 
 footer{
